@@ -4,7 +4,7 @@ export const postAPI = {
 
     getPostsByUserId: userId => {
 
-        return axiosInstance.get(`/posts/${userId}`)
+        return axiosInstance.get(`/posts?userId=${userId}`)
     },
     addPostByUser: (title, body, userId) => {
 
