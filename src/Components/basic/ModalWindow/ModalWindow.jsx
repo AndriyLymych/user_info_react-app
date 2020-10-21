@@ -8,7 +8,7 @@ const AddPostReduxForm = reduxForm({
     form: 'add-post'
 })(AddPostForm);
 
-const ModalWindow = ({closeWindow, getUsers, users, isPostAddedLoading, addPostForUser, isPostAdded, addErr, addedPost}) => {
+const ModalWindow = ({closeWindow, getUsers, users, isPostAddedLoading, addPostForUser, isPostAdded, addErr, addedPost, openModal}) => {
 
     useEffect(() => {
         getUsers()
@@ -18,7 +18,7 @@ const ModalWindow = ({closeWindow, getUsers, users, isPostAddedLoading, addPostF
         addPostForUser(title, body, userId);
     };
 
-    return <div className={style.modalContainer}>
+    return <div className={!openModal ? style.modalContainer : style.modalContainer + ' ' + style.modalOpen}>
         {isPostAddedLoading && <Preloader/>}
         <button title={'Close'} className={style.closeBtn} onClick={closeWindow}>Close</button>
         {!isPostAdded &&

@@ -46,7 +46,7 @@ const Posts = ({
         <div className={style.postsContainer}>
             <div>
                 {openModal &&
-                <ModalWindow closeWindow={closeModalWindow}
+                <ModalWindow openModal={openModal} closeWindow={closeModalWindow}
                              isPostAddedLoading={isPostAddedLoading} users={users}
                              getUsers={getUsers} addPostForUser={addPostForUser} isPostAdded={isPostAdded}
                              addErr={addErr} addedPost={addedPost}/>}
@@ -79,8 +79,7 @@ const Posts = ({
                             }
 
                         </table>
-                        <button title={'Add Post'} className={style.openModal} onClick={openModalWindow}>Add post
-                        </button>
+                        <button title={'Add Post'} className={style.openModal} onClick={openModalWindow}>Add post</button>
                     </div>
                 }
 

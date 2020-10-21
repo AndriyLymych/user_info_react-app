@@ -1,6 +1,6 @@
 .modalContainer {
     width: 100%;
-    margin: 0 auto;
+    margin-top: -100%;
     min-height: 100vh;
     position: absolute;
     background: #282c34;
@@ -9,6 +9,21 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+}
+
+.modalOpen {
+    animation-name: popup;
+    animation-duration: 1s;
+    animation-fill-mode: forwards
+}
+
+@keyframes popup {
+    50% {
+        margin-top: -50%;
+    }
+    100% {
+        margin-top: 0;
+    }
 }
 
 .closeBtn {
