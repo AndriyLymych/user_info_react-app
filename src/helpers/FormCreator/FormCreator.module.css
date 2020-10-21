@@ -1,0 +1,17 @@
+.errorMsg input {
+    color: red;
+    border: 2px solid red;
+    font-style: italic;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.errorMsg div {
+    color: red;
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: start;
+
+}

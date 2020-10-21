@@ -1,0 +1,22 @@
+.commentLine{
+    border: 1px solid #008f81;
+    width: 100%;
+    background: #008f81;
+    margin-bottom: 5px;
+
+}
+.commentContainer{
+    width: 95%;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.commentContainer p{
+    margin: 0 0 5px 0;
+}
+.commentItem{
+    margin-bottom: 5px;
+    text-align: start;
+}

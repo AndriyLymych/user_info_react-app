@@ -22,7 +22,7 @@ export const getUsers = () => async dispatch => {
 
     }
 };
-export const getUserProfileById = () => userId => async dispatch => {
+export const getUserProfileById = userId => async dispatch => {
 
     try {
         dispatch(setUserProfileLoading(true));

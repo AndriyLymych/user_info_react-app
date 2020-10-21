@@ -1,0 +1,100 @@
+.postProfileContainer {
+    width: 100%;
+    min-height: 90vh;
+    margin: 0 auto;
+    background: snow;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.editBtn, .deleteBtn {
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 80px;
+    height: 30px;
+    transition: 0.2s;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.editBtn:hover {
+    transition: 0.2s;
+    transform: scale(1.03);
+    background: #008f81;
+    color: snow;
+}
+
+.deleteBtn:hover {
+    transition: 0.2s;
+    transform: scale(1.03);
+    background: #ff3d00;
+    color: snow;
+}
+
+.changePostInfo {
+    display: flex;
+    justify-content: start;
+}
+
+.postStatus {
+    font-size: 50px;
+    margin-top: 10%;
+    color: #454a59;
+    font-weight: bold;
+}
+
+.postProfileErr {
+    color: red;
+    font-style: italic;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.postInfoArticle {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #4f4f4f;
+    text-align: start;
+    width: 50%;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.postInfoItem {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #2e2e2e;
+    text-align: start;
+    width: 50%;
+    margin-left: 10px;
+}
+
+.infoItemArticle {
+    font-weight: bold;
+    color: #4f4f4f;
+}
+.editFormInfoContainer{
+    display: flex;
+    flex-direction: column;
+
+}
+.successEdit{
+    margin: 10px 10px;
+    text-align: start;
+    font-size: 24px;
+    color: #008f81;
+    font-weight: bold;
+}
+.commentArticle{
+    margin: 10px 10px;
+    text-align: start;
+    font-size: 33px;
+    color: #008f81;
+    font-weight: bold;
+    width: 50%;
+}

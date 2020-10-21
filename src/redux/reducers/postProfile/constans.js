@@ -1,0 +1,11 @@
+export const SET_IS_POST_EDITED = 'user-info-react-app/postReducer/set-is-post-edited';
+export const SET_IS_POST_DELETED = 'user-info-react-app/postReducer/set-is-post-deleted';
+export const SET_POST_RECORD = 'user-info-react-app/postReducer/set-post-record';
+export const SET_POST_RECORD_LOADING = 'user-info-react-app/postReducer/set-post-record-loading';
+export const SET_COMMENTS_FOR_POSTS = 'user-info-react-app/postReducer/set-comments-for-posts';
+export const SET_COMMENTS_FOR_POSTS_LOADING = 'user-info-react-app/postReducer/set-comments-for-loading';
+export const SET_EDITED_LOADING = 'user-info-react-app/postReducer/set-edit-loading';
+export const SET_DELETED_LOADING = 'user-info-react-app/postReducer/set-delete-loading';
+export const SET_EDITED_NEW_POST = 'user-info-react-app/postReducer/set-edited-new-post';
+export const SET_EDIT_ERR = 'user-info-react-app/postReducer/set-edit-err';
+export const SET_DELETE_ERR = 'user-info-react-app/postReducer/set-delete err';

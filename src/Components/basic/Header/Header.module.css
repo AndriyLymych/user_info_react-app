@@ -1,0 +1,11 @@
+.headerContainer{
+    height: 10vh;
+    background: #008f81;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+.headerLink{
+    margin-right: 10%;
+}

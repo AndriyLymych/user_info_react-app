@@ -12,7 +12,7 @@ export const postAPI = {
     },
     getPostById: postId => {
 
-        return axiosInstance.post(`/posts/${postId}`)
+        return axiosInstance.get(`/posts/${postId}`)
     },
     editPost: (postId, title, body) => {
 
@@ -24,6 +24,6 @@ export const postAPI = {
     },
     getCommentsForPost:  postId => {
 
-        return axiosInstance.get(`/comments/${postId}`)
+        return axiosInstance.get(`/comments?postId=${postId}`)
     },
 };

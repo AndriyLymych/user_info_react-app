@@ -1,5 +1,5 @@
 import {connect} from "react-redux";
-import {getUserProfileById, getUsers} from "../redux/reducers/user/thunks";
+import {getUsers} from "../redux/reducers/user/thunks";
 import Users from "../Components/pages/Users/Users";
 
 
@@ -11,4 +11,4 @@ const mapStateToProps = state => {
     }
 };
 
-export default connect(mapStateToProps, {getUsers,getUserProfileById})(Users)
+export default connect(mapStateToProps, {getUsers})(Users)
