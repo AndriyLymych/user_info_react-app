@@ -11,13 +11,11 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Preloader = () => {
-
     const classes = useStyles();
 
     return (
-
         <Backdrop className={classes.backdrop} open={true}>
-             <CircularProgress disableShrink color={'inherit'} />
+            <CircularProgress disableShrink color={'inherit'}/>
         </Backdrop>
     )
 };

@@ -46,7 +46,8 @@ const Posts = ({
         <div className={style.postsContainer}>
             <div>
                 {openModal &&
-                <ModalWindow closeWindow={closeModalWindow} isPostAddedLoading={isPostAddedLoading} users={users}
+                <ModalWindow closeWindow={closeModalWindow}
+                             isPostAddedLoading={isPostAddedLoading} users={users}
                              getUsers={getUsers} addPostForUser={addPostForUser} isPostAdded={isPostAdded}
                              addErr={addErr} addedPost={addedPost}/>}
 
@@ -55,20 +56,26 @@ const Posts = ({
                 {
                     !postsLoadingError && !isPostsLoading && <div>
                         <table border="2">
+                            <thead>
                             <tr>
                                 <th>Title</th>
                                 <th>Description</th>
                                 <th>More info</th>
                             </tr>
+                            </thead>
 
                             {
                                 posts.map(p =>
 
+                                    <tbody key={p.id}>
                                     <tr key={p.id}>
                                         <td>{p.title}</td>
                                         <td>{p.body}</td>
-                                        <td><NavLink className={usersStyles.usersLink} to={`/post/${p.id}`}>Details</NavLink></td>
-                                    </tr>)
+                                        <td><NavLink className={usersStyles.usersLink}
+                                                     to={`/post/${p.id}`}>Details</NavLink></td>
+                                    </tr>
+                                    </tbody>
+                                )
                             }
 
                         </table>
@@ -76,7 +83,7 @@ const Posts = ({
                     </div>
                 }
 
-                {postsLoadingError && <div>{postsLoadingError}</div>}
+                {postsLoadingError && <div className={usersStyles.serverErr}>{postsLoadingError}</div>}
 
             </div>
             <Footer/>

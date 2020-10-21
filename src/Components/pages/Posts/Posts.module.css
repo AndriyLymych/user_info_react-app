@@ -1,4 +1,4 @@
-.postsContainer{
+.postsContainer {
     width: 100%;
     min-height: 90vh;
     margin: 0 auto;
@@ -8,7 +8,8 @@
     flex-direction: column;
     justify-content: space-between;
 }
-.openModal{
+
+.openModal {
     cursor: pointer;
     border-radius: 5px;
     margin-bottom: 10px;
@@ -16,7 +17,8 @@
     height: 30px;
     transition: 0.2s;
 }
-.openModal:hover{
+
+.openModal:hover {
     transition: 0.2s;
     transform: scale(1.03);
     background: #008f81;

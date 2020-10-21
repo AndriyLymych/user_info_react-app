@@ -1,4 +1,4 @@
 export const ErrorMsg = {
-    USERS_NOT_PRESENT : 'Нажаль, жодного користувача не знайдено',
-    SERVER_ERR : 'Помилка завантаження даних. Спробуйте ще раз.'
-}
+    USERS_NOT_PRESENT: 'Users is not present',
+    SERVER_ERR: 'Server error. Please, try again later.'
+};

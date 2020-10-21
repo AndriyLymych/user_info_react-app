@@ -1,0 +1,28 @@
+.unknownPageContainer {
+    margin: 0 auto;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.unknownPageInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.errNumber {
+    font-weight: bold;
+    font-size: 180px;
+    color: #008f81;
+}
+
+.errMsg {
+    font-weight: bold;
+    font-size: 50px;
+    color: #008f81;
+}

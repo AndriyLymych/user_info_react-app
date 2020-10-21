@@ -5,7 +5,7 @@ import {reduxForm} from "redux-form";
 import UpdatePostForm from "../../basic/UpdatePostForm/UpdatePostForm";
 import Footer from "../../basic/Footer/Footer";
 import style from './Post.module.css'
-import {NavLink, Redirect} from "react-router-dom";
+import usersStyle from '../../pages/Users/Users.module.css'
 
 const UpdatePostReduxForm = reduxForm({
     form: 'edit-post'
@@ -69,7 +69,7 @@ const Post = ({
                             !editPost &&
                             <>
                                 {
-                                    !isPostEdited &&
+                                    !isPostEdited && postRecord &&
                                     <div>
                                         <div className={style.postInfoArticle}>Post information:</div>
                                         <div className={style.postInfoItem}><span className={style.infoItemArticle}>Post number:</span>
@@ -87,6 +87,11 @@ const Post = ({
                                     </div>
                                 }
                                 {
+                                    !postRecord &&
+                                    <div className={usersStyle.serverErr}>Something wrong.Please try again
+                                        later...</div>
+                                }
+                                {
                                     isPostEdited && !editErr &&
                                     <div>
                                         <div className={style.postInfoArticle}>Post information:</div>
@@ -102,7 +107,7 @@ const Post = ({
                                 }
                                 {
                                     isPostEdited && editErr &&
-                                    <div>
+                                    <div className={usersStyle.serverErr}>
                                         {editErr}
                                     </div>
                                 }
@@ -117,7 +122,9 @@ const Post = ({
                         }
                         <div className={style.commentArticle}>Comments:</div>
                         {
-                            commentsForPost.map(comment => <CommentCard key={comment.id} comment={comment}/>)
+                            !commentsForPost.length ?
+                                <div className={usersStyle.serverErr + ' ' + style.noCommentsErr}>No comments</div> :
+                                commentsForPost.map(comment => <CommentCard key={comment.id} comment={comment}/>)
                         }
                     </div>
                 }

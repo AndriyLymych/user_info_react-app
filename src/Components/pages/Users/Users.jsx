@@ -1,8 +1,8 @@
 import React, {useEffect} from "react";
 import Preloader from "../../basic/Preloader/Preloader";
 import {NavLink} from "react-router-dom";
-import style from './Users.module.css'
 import Footer from "../../basic/Footer/Footer";
+import style from './Users.module.css'
 
 const Users = ({users, getUsers, userError, isUsersLoading}) => {
 
@@ -20,6 +20,7 @@ const Users = ({users, getUsers, userError, isUsersLoading}) => {
                     !userError && !isUsersLoading &&
                     <div>
                         <table border="2">
+                            <thead>
                             <tr>
                                 <th>UserName</th>
                                 <th>Name</th>
@@ -30,10 +31,12 @@ const Users = ({users, getUsers, userError, isUsersLoading}) => {
                                 <th>Company</th>
                                 <th>User Posts</th>
                             </tr>
+                            </thead>
                             {
                                 users.map(u =>
 
-                                    <tr key={u.id}>
+                                    <tbody key={u.id}>
+                                    <tr>
                                         <td>{u.username}</td>
                                         <td>{u.name}</td>
                                         <td>{u.email}</td>
@@ -41,15 +44,17 @@ const Users = ({users, getUsers, userError, isUsersLoading}) => {
                                         <td>{u.phone}</td>
                                         <td>{u.website}</td>
                                         <td>{u.company.name}</td>
-                                        <td><NavLink className={style.usersLink} to={`/posts/${u.id}`}>See posts</NavLink></td>
-                                    </tr>)
+                                        <td><NavLink className={style.usersLink} to={`/posts/${u.id}`}>See
+                                            posts</NavLink></td>
+                                    </tr>
+                                    </tbody>)
                             }
 
 
                         </table>
                     </div>
                 }
-                {userError && <div>{userError}</div>}
+                {userError && <div className={style.serverErr}>{userError}</div>}
             </div>
             <Footer/>
 

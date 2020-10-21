@@ -2,7 +2,6 @@ import {connect} from "react-redux";
 import {getUsers} from "../redux/reducers/user/thunks";
 import Users from "../Components/pages/Users/Users";
 
-
 const mapStateToProps = state => {
     return {
         users: state.userReducer.users,

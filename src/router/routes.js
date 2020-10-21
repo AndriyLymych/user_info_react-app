@@ -3,16 +3,16 @@ import {Route, Switch} from "react-router-dom";
 import UserContainer from "../containers/UserContainer";
 import PostsContainer from "../containers/PostsContainer";
 import PostContainer from "../containers/PostContainer";
-import Page404 from "../Components/pages/Page404/Page404";
+import UnknownPage from "../Components/pages/UnknownPage/UnknownPage";
 
 const routes = () => {
 
     return (
         <Switch>
-            <Route path='/' exact render={() => <UserContainer/>}/>
-            <Route path='/posts/:userId' render={() => <PostsContainer/>}/>
-            <Route path='/post/:id' render={() => <PostContainer/>}/>
-            <Route path='*' render={() => <Page404/>}/>
+            <Route path='/' exact render={() => <UserContainer/>} />
+            <Route path='/posts/:userId' exact render={() => <PostsContainer/>} />
+            <Route path='/post/:id' exact render={() => <PostContainer/>}/>
+            <Route path='*' render={() => <UnknownPage/>} />
         </Switch>
     )
 };

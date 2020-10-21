@@ -1,7 +1,7 @@
 .modalContainer {
     width: 100%;
-    min-height: 90vh;
     margin: 0 auto;
+    min-height: 100vh;
     position: absolute;
     background: #282c34;
     z-index: 1;

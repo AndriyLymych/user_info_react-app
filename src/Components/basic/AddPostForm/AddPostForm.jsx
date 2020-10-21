@@ -16,7 +16,7 @@ const AddPostForm = ({handleSubmit, pristine, submitting, users, addErr}) => {
 
     return (
         <form className={s.addForm} onSubmit={handleSubmit}>
-            <div >
+            <div>
                 <div className={s.label}>Post title:</div>
                 <div>
                     <Field
@@ -27,7 +27,7 @@ const AddPostForm = ({handleSubmit, pristine, submitting, users, addErr}) => {
                     />
                 </div>
             </div>
-            <div >
+            <div>
                 <div className={s.label}>Post description:</div>
                 <div>
                     <Field
@@ -38,7 +38,7 @@ const AddPostForm = ({handleSubmit, pristine, submitting, users, addErr}) => {
                     />
                 </div>
             </div>
-            <div >
+            <div>
                 <div className={s.label}>Author:</div>
                 <div>
                     <Field

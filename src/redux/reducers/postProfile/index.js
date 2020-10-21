@@ -91,7 +91,6 @@ const postProfileReducer = (state = initialState, action) => {
 
         default:
             return state
-
     }
 };
 

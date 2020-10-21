@@ -78,23 +78,31 @@
     font-weight: bold;
     color: #4f4f4f;
 }
-.editFormInfoContainer{
+
+.editFormInfoContainer {
     display: flex;
     flex-direction: column;
 
 }
-.successEdit{
+
+.successEdit {
     margin: 10px 10px;
     text-align: start;
     font-size: 24px;
     color: #008f81;
     font-weight: bold;
 }
-.commentArticle{
+
+.commentArticle {
     margin: 10px 10px;
     text-align: start;
     font-size: 33px;
     color: #008f81;
     font-weight: bold;
     width: 50%;
+}
+
+.noCommentsErr {
+    text-align: start;
+    margin-left: 10px;
 }

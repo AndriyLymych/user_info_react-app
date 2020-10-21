@@ -23,7 +23,7 @@
     margin-bottom: 10px;
 }
 
-.addForm input,select {
+.addForm input, select {
     height: 25px;
 }
 
@@ -40,7 +40,8 @@
     margin-bottom: 5px;
     width: 95%;
 }
-.check{
+
+.check {
     font-size: 15px;
     height: 30px;
     width: 100px;
@@ -51,11 +52,11 @@
     color: snow;
 }
 
-.check:hover{
+.check:hover {
     background: #ff3d00;
 }
 
-.addErr  {
+.addErr {
     color: red;
     border: 2px solid red;
     font-style: italic;

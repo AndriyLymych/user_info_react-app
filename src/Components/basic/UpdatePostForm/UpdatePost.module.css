@@ -23,9 +23,11 @@
     box-shadow: 0 0 8px #88D5E9;
     border: 2px solid #157dc3;
 }
-.updateForm textarea{
+
+.updateForm textarea {
     height: 5%;
 }
+
 .label {
     color: #555555;
     background: transparent;
@@ -52,8 +54,3 @@
     color: snow;
 }
 
-@media (max-width: 470px) {
-    .updateForm {
-        width: 90%;
-    }
-}

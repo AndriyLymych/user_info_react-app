@@ -1,7 +1,7 @@
 .usersContainer {
     margin: 0 auto;
     width: 100%;
-    height: 90vh;
+    min-height: 90vh;
     background: snow;
     display: flex;
     flex-direction: column;
@@ -19,7 +19,7 @@
     color: #616161;
 }
 
-.usersLink{
+.usersLink {
     font-size: 15px;
     height: 20px;
     width: 70px;
@@ -31,7 +31,14 @@
     color: snow;
 }
 
-.usersLink:hover{
+.usersLink:hover {
     background: #ff3d00;
+}
+
+.serverErr {
+    color: red;
+    font-style: italic;
+    font-size: 25px;
+    margin-top: 10px;
 }
 

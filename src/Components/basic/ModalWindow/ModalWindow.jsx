@@ -1,8 +1,8 @@
 import React, {useEffect} from "react";
-import style from './ModalWindow.module.css';
 import AddPostForm from "../AddPostForm/AddPostForm";
 import {reduxForm} from "redux-form";
 import Preloader from "../Preloader/Preloader";
+import style from './ModalWindow.module.css';
 
 const AddPostReduxForm = reduxForm({
     form: 'add-post'
