@@ -15,7 +15,7 @@ const Users = ({users, getUsers, userError, isUsersLoading}) => {
         <div className={style.usersContainer}>
             {isUsersLoading && <Preloader/>}
             <div className={style.usersInfo}>
-                <h1 className={style.usersTitle}>Users List:</h1>
+                <h1 className={style.usersTitle} title={'Users List'}>Users List:</h1>
                 {
                     !userError && !isUsersLoading &&
                     <div>
@@ -44,7 +44,7 @@ const Users = ({users, getUsers, userError, isUsersLoading}) => {
                                         <td>{u.phone}</td>
                                         <td>{u.website}</td>
                                         <td>{u.company.name}</td>
-                                        <td><NavLink className={style.usersLink} to={`/posts/${u.id}`}>See
+                                        <td><NavLink title={'See Posts'}  className={style.usersLink} to={`/posts/${u.id}`}>See
                                             posts</NavLink></td>
                                     </tr>
                                     </tbody>)

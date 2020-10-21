@@ -20,7 +20,7 @@ const ModalWindow = ({closeWindow, getUsers, users, isPostAddedLoading, addPostF
 
     return <div className={style.modalContainer}>
         {isPostAddedLoading && <Preloader/>}
-        <button className={style.closeBtn} onClick={closeWindow}>Close</button>
+        <button title={'Close'} className={style.closeBtn} onClick={closeWindow}>Close</button>
         {!isPostAdded &&
         <AddPostReduxForm onSubmit={onSubmit} users={users} addErr={addErr}/>}
         {isPostAdded && <div>

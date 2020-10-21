@@ -36,7 +36,7 @@ const UpdatePostForm = ({handleSubmit, submitting}) => {
                 </div>
             </div>
 
-            <button className={style.check} type="submit" disabled={submitting}>
+            <button title={'Check'} className={style.check} type="submit" disabled={submitting}>
                 Check
             </button>
 

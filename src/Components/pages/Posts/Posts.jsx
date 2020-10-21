@@ -71,7 +71,7 @@ const Posts = ({
                                     <tr key={p.id}>
                                         <td>{p.title}</td>
                                         <td>{p.body}</td>
-                                        <td><NavLink className={usersStyles.usersLink}
+                                        <td><NavLink title={'Details'} className={usersStyles.usersLink}
                                                      to={`/post/${p.id}`}>Details</NavLink></td>
                                     </tr>
                                     </tbody>
@@ -79,7 +79,8 @@ const Posts = ({
                             }
 
                         </table>
-                        <button className={style.openModal} onClick={openModalWindow}>Add post</button>
+                        <button title={'Add Post'} className={style.openModal} onClick={openModalWindow}>Add post
+                        </button>
                     </div>
                 }
 

@@ -56,8 +56,8 @@ const AddPostForm = ({handleSubmit, pristine, submitting, users, addErr}) => {
                 </div>
             </div>
             {addErr && <div className={s.addErr}>{addErr}</div>}
-            <button className={s.check} type="submit" disabled={pristine || submitting}>
-                check
+            <button title={'Check'} className={s.check} type="submit" disabled={pristine || submitting}>
+                Check
             </button>
         </form>
     )

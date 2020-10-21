@@ -81,8 +81,8 @@ const Post = ({
                                             <span className={style.infoItemArticle}>Post description:</span>
                                             <i> {postRecord?.body}</i></p>
                                         <div className={style.changePostInfo}>
-                                            <button className={style.editBtn} onClick={openEditForm}>Edit</button>
-                                            <button className={style.deleteBtn} onClick={deletePost}>Delete</button>
+                                            <button title={'Edit'} className={style.editBtn} onClick={openEditForm}>Edit</button>
+                                            <button title={'Delete'} className={style.deleteBtn} onClick={deletePost}>Delete</button>
                                         </div>
                                     </div>
                                 }
@@ -117,10 +117,10 @@ const Post = ({
                         <div className={style.editFormInfoContainer}>
                             <div className={style.postInfoArticle}>Please, edit post:</div>
                             <UpdatePostReduxForm onSubmit={onSubmit} initialValues={postRecord}/>
-                            <button className={style.deleteBtn} onClick={closeEditForm}>Cancel</button>
+                            <button title={'Cancel'} className={style.deleteBtn} onClick={closeEditForm}>Cancel</button>
                         </div>
                         }
-                        <div className={style.commentArticle}>Comments:</div>
+                        <div title={'Comments'} className={style.commentArticle}>Comments:</div>
                         {
                             !commentsForPost.length ?
                                 <div className={usersStyle.serverErr + ' ' + style.noCommentsErr}>No comments</div> :
